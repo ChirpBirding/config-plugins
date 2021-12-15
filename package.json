@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "expo-yarn-workspaces check-workspace-dependencies",
+    "postinstall": "expo-yarn-workspaces check-workspace-dependencies && npx patch-package",
     "gen": "ts-node ./scripts/generate-plugin.ts",
     "update-issue-template": "ts-node ./scripts/gh-issues-config.ts",
     "start": "lerna run build --parallel -- --watch",
